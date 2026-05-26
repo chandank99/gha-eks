@@ -77,7 +77,7 @@ def home():
         <script>
             function showMessage() {
                 document.getElementById("message").innerHTML =
-                    "✅ Your Flask app is working perfectly!";
+                    "✅ App Built By- CHANDAN, Your Flask app is working perfectly!";
             }
 
             function updateClock() {
