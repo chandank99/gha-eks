@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-flaskapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flaskapp 
+  template:
+    metadata:
+      labels:
+        app: flaskapp
+    spec:
+      containers:
+      - name: my-app-flask
+        image: chandansingh95/flask-app:v2
+        ports:
+        - containerPort: 5000
