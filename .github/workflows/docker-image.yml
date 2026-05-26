@@ -41,3 +41,4 @@ jobs:
           git config user.email "github-actions@noreply"
           git add k8s/depl.yaml
           git commit -m "docker tag updated by GHA"
+          git push origin main
