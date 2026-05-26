@@ -30,4 +30,7 @@ jobs:
         #Short SHA
         run: |
           SHORT_SHA=${GITHUB_SHA::7}
-          yq e ".spec.template.spec.containers[0].image = "chandansingh95/gha-pyapp:$SHORT_SHA"" -i k8s/depl.yaml
+
+          yq e ".spec.template.spec.containers[0].image = \"chandansingh95/gha-pyapp:$SHORT_SHA\"" -i k8s/depl.yaml
+
+          cat k8s/depl.yaml
