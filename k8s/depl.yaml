@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app-flask
-          image: chandansingh95/gha-pyapp:42ecc37
+          image: chandansingh95/gha-pyapp:36115e6
           ports:
             - containerPort: 5000
