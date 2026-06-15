@@ -1,0 +1,21 @@
+name: My test workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        run: echo "Checkout the code from Repo.
+
+      - name: print the code
+        run: echo "PRint the code"
+  Test:
+    needs: Checkout
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test the code
+        run: echo "Testing the code"
+        
