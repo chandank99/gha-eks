@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        run: echo "Checkout the code from Repo.
+        run: echo "Checkout the code from Repo."
 
       - name: print the code
         run: echo "PRint the code"
